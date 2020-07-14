@@ -1,0 +1,889 @@
+/*-------------------------------------
+     DEFAULT THEME CSS START
+-----------------------------------------
+*/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@500;700;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*/
+
+@import url('google-fonts.css');
+
+
+body {
+	font-family: 'Montserrat';
+	position: relative;
+	overflow-x: hidden;
+	background: #fbfbfb !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+button {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.rounded-btn {
+	background-color: #FF3E81 !important;
+	font-size: 18px;
+	font-family: Poppins;
+	font-weight: 600;
+	color: #fff;
+	padding: 12px 40px !important;
+	border-radius: 100px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+}
+
+.rounded-btn:hover {
+	color: #fff !important;
+}
+
+
+.rounded-btn::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #0734a5;
+	top: 0;
+	left: -100%;
+	z-index: -1;
+	transform-origin: left;
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+}
+
+.rounded-btn:hover:after {
+	left: 0%;
+
+}
+/*-------------------------------------
+     DEFAULT THEME CSS ENDS
+-----------------------------------------
+*/
+
+
+
+/*-------------------------------------
+     HEADER PART CSS START
+-----------------------------------------
+*/
+#header {
+	height: 100%;
+	transition: .5s !important;
+	-webkit-transition: .5s !important;
+	-moz-transition: .5s !important;
+	-ms-transition: .5s !important;
+	-o-transition: .5s !important;
+	background: url(../img/bg-img.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: 0 0 12px 12px rgb(212, 209, 209);
+	background-size: cover;
+}
+
+
+
+#header.sticky {
+	position: fixed;
+	top: 0;
+	height: auto;
+	left: 0;
+	z-index: 99;
+	width: 100%;
+	transition: .5s !important;
+	-webkit-transition: .5s !important;
+	-moz-transition: .5s !important;
+	-ms-transition: .5s !important;
+	-o-transition: .5s !important;
+	box-shadow: 0 0 10px 3px #FFA;
+}
+
+.navbar-light .navbar-brand {
+	font-size: 35px;
+	color: rgb(255, 255, 255);
+	font-weight: bolder;
+	letter-spacing: 2px;
+}
+
+
+  
+.navbar-brand:hover {
+    color: rgb(230, 220, 220) !important;
+}
+
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+	font-size: 17px !important;
+	color: rgb(255, 255, 255) !important;
+	text-transform: capitalize;
+	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.nav-link:hover, .active-nav {
+    color: #ffd207  !important;
+}
+
+.active-nav {
+    font-weight: 500;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	color: #ffd207  !important;
+	background: transparent;
+	letter-spacing: 1.4px;
+}
+
+.navbar-light .navbar-toggler {
+	color: #fff !important;
+	border-color: rgb(0, 0, 0);
+	border: 1.4px solid;
+}
+
+.shopping-cart-box {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.shopping-cart-box:hover .shopping-bag {
+    color: #ffd207;
+}
+
+.shopping-bag {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 30px;
+    margin-bottom: 0px;
+    position: relative;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+
+.shopping-number {
+	color: rgb(255, 249, 249);
+	font-weight: bolder;
+	background: rgb(255, 0, 119);
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	padding: 0px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: 23px;
+	font-size: 14px;
+	display: inline-block;
+}
+/*-------------------------------------
+     HEADER PART CSS ENDS
+-----------------------------------------
+*/
+
+
+/*-------------------------------------
+     HERO PART CSS START
+-----------------------------------------
+*/
+.hero-section .container, .hero-section .row, .hero-section .col-12 {
+	height: 100vh;
+}
+
+.hero-section {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	font-family: 'Noto Sans JP', sans-serif;
+	box-shadow: 0px 0px 35px -24px #7cec9c;
+}
+
+
+.hero-right h1 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 60px;
+	line-height: 1;
+	padding-bottom: 25px;
+	color: #303669;
+	text-transform: uppercase;
+}
+
+.hero-right p {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+.hero-right .btn {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.hero-left-img {
+	animation:  .2s infinite;
+	animation-duration: 3s;
+	transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-webkit-animation:all .4s ease-in-out;
+}
+/*-------------------------------------
+     HERO PART CSS ENDS
+-----------------------------------------
+*/
+
+
+/*-------------------------------------
+     CORE FEATURE CSS START
+-----------------------------------------
+*/
+.core-feta-mini-title {
+    color: #0073EC;
+    font-size: 22px;
+  }
+.core-feta-title {
+	font-size: 45px;
+	padding: 7px 0px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	line-height: 46px;
+	color: #303669;
+}
+
+  .core-feta-mini-description {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	padding: 7px 0px 23px 0px;
+}
+
+.core-feat-icon {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.core-feat-single {
+    background: #fff;
+    box-shadow: 0px 0px 19px 2px #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    transform:scale(1);
+    transition: all .3s ease-in-out ;
+    -webkit-transition: all .3s ease-in-out ;
+    -moz-transition: all .3s ease-in-out ;
+    -ms-transition: all .3s ease-in-out ;
+    -o-transition: all .3s ease-in-out ;
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1);
+	-o-transform:scale(1);
+	position: relative;
+}
+
+.core-feat-single:hover {
+    box-shadow: 0px 0px 19px 2px rgba(69, 204, 7, 0.452);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/*-------------------------------------
+     CORE FEATURE CSS ENDS
+-----------------------------------------
+*/
+
+
+
+/*-------------------------------------
+    WINDOWS ITEM CSS START
+-----------------------------------------
+*/
+.windows-title h2 {
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 1;
+	padding-bottom: 25px;
+	color: #303669;
+	text-transform: uppercase;
+	padding-bottom: 7px;
+}
+
+.windows-title h2::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	height: 1.3rem;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 1.3rem;
+	background: red;
+	border-radius: 50%;
+	margin-top: 6px;
+}
+
+.windows-title h2::after {
+	content: "";
+	position: absolute;
+	width: 279px;
+	height: 3px;
+	left: 50%;
+	top: 100%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background: red;
+	margin-top: 15px;
+	border-radius: 1rem;
+}
+
+.windows-title p {
+	font-size: 18px;
+	font-family: 'Poppins';
+	font-weight: 400;
+}
+
+
+.windos-description h4 {
+	font-weight: 500;
+	font-size: 32px;
+	margin-bottom: 10px;
+	margin-top: 12px;
+}
+
+.reviews-item span {
+    font-size: 22px;
+}
+
+.reviews-item .checked {
+    color: #fd7e14;
+}
+
+.reviews-item .rating-value {
+    font-family: 'Popins', serif;
+}
+
+
+.windos-description p {
+	font-family: 'Poppins';
+	font-weight: 300;
+}
+
+.windows-img img {
+	margin-top: px;
+	max-height: 300px !important;
+}
+
+.windows-body {
+	border: 5px dashed #78c2ff;
+	padding: 34px 15px;
+	border-radius: 35px;
+	background: #fff;
+	box-shadow: 0px 0px 12px 12px #ddd;
+	position: relative;
+}
+
+
+.windows-price-box {
+    display: inline-block;
+    color: rgb(10, 153, 22);
+    font-size: 26px;
+    font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.windows-price-box .old-price {
+    margin-left: 16px;
+    font-size: 18px;
+    color: rgb(255, 0, 0);
+    position: relative;
+}
+
+.windows-price-box .old-price::after {
+	content: "";
+	position: absolute;
+	background: #303669;
+	height: 2px;
+	width: 120%;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.windows-commission-price {
+	font-size: 14px;
+}
+/*-------------------------------------
+    WINDOWS ITEM CSS ENDS
+-----------------------------------------
+*/
+
+
+/*-------------------------------------
+     OFFICE PRODUCTS CSS START
+-----------------------------------------
+*/
+.office-product-single-box {
+	border-radius: 30px !important;
+	overflow: hidden;
+	box-shadow: 0px 0px 9px 4px #ddd;
+	padding-top: 20px;
+	padding-bottom: 12px;
+	-webkit-border-radius: 30px !important;
+	-moz-border-radius: 30px !important;
+	-ms-border-radius: 30px !important;
+	-o-border-radius: 30px !important;
+}
+
+.card-img-top {
+	max-height: 350px;
+}
+
+.office-product-single-box .card {
+    border: none !important;
+}
+
+.office-product-single-box .card-text {
+	margin-bottom: 5px !important;
+}
+
+
+
+.office-product-price-box {
+	display: block;
+	color: rgb(10, 153, 22);
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.office-product-price-box .old-price {
+	margin-left: 16px;
+	font-size: 14px;
+	color: rgb(255, 0, 0);
+	position: relative;
+}
+
+.office-product-price-box .old-price::after {
+	content: "";
+	position: absolute;
+	background: #303669;
+	height: 2px;
+	width: 120%;
+	left: 0;
+	transform: translateY(-50%);
+	top: 50%;
+}
+
+.office-product-reviews span {
+    font-size: 18px;
+}
+
+.office-product-reviews .checked {
+    color: #fd7e14;
+}
+
+.office-product-reviews .rating-value {
+    font-family: 'Popins', serif;
+}
+/*-------------------------------------
+     OFFICE PRODUCTS CSS ENDS
+-----------------------------------------
+*/
+
+
+/*-------------------------------------
+     TESTIMONIAL CSS START
+-----------------------------------------
+*/
+.tesi-section {
+	background-color: #2E1278;
+	background-image: url(../img/bg-img.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.tesi-top h6 {
+	font-size: 19px;
+	font-weight: 300;
+	font-family: 'Noto Sans JP';
+}
+
+.testi-top h2 {
+	font-size: 40px;
+	font-weight: 800;
+}
+
+.tesi-top h2 {
+	font-family: Noto Sans JP;
+	font-weight: 800;
+	font-size: 35px;
+	margin: 10px 0 20px 0px;
+}
+
+.tesi-top p {
+	font-size: 18px;
+	font-family: Noto Sans JP;
+}
+
+.client-img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: auto;
+}
+
+.testi-single {
+	background-color: #fff;
+	padding: 40px 20px;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+}
+
+.client-comnt h5 {
+	margin: 20px 0px 8px 0px;
+	font-size: 22px;
+	color: gray;
+	font-style: italic;
+	font-family: Montserrat;
+	font-weight: 400;
+}
+
+.client-reviews span {
+    font-size: 16px;
+}
+
+.client-reviews .checked {
+    color: #fd7e14;
+}
+
+.client-reviews {
+    margin-bottom: 20px;
+}
+
+.client-details h4 {
+	color: red;
+	font-size: 30px;
+	margin-bottom: 12px;
+}
+
+.client-details p {
+	color: black;
+	font-weight: 400;
+}
+
+
+/* Owl carousel css */
+.owl-nav {
+	margin-top: 60px;
+	text-align: center;
+}
+
+.owl-prev {
+	display: inline-block;
+	color: #000;
+	padding: 8px 15px;
+	background: #fff;
+	border-radius: 6px;
+	margin-right: 10px;
+	border: 1.5px solid #fff;
+	transition: .4s ease-in-out;
+	-webkit-transition: .4s ease-in-out;
+	-moz-transition: .4s ease-in-out;
+	-ms-transition: .4s ease-in-out;
+	-o-transition: .4s ease-in-out;
+}
+  .owl-next {
+	display: inline-block;
+	color: #000;
+	padding: 8px 15px;
+	background: #fff;
+	border-radius: 6px;
+	margin-left: 10px;
+	border: 1.5px solid #fff;
+	transition: .4s ease-in-out;
+	-webkit-transition: .4s ease-in-out;
+	-moz-transition: .4s ease-in-out;
+	-ms-transition: .4s ease-in-out;
+	-o-transition: .4s ease-in-out;
+  }
+
+  .owl-prev:hover ,.owl-next:hover {
+	  background: transparent;
+	  color: #fff;
+  }
+
+/* Owl carousel css */
+/*-------------------------------------
+     TESTIMONIAL CSS ENDS
+-----------------------------------------
+*/
+
+
+
+/*-------------------------------------
+     CONTACT FORM CSS HERE
+-----------------------------------------
+*/
+.contact-left h4 {
+	color: #303669;
+	font-family: 'Popins';
+	font-family: Poppins;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 2;
+  }
+  .contact-left h2 {
+	font-family: Montserrat;
+	font-weight: 800;
+	font-size: 52px;
+	line-height: 1;
+	color: #303669;
+	margin-bottom: 20px;
+  }
+  .contact-left p {
+	font-family: Poppins;
+	font-size: 23px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin-bottom: 43px;
+	margin-top: 30px;
+  }
+
+ .rounded-btn {
+	background-color: #FF3E81 !important;
+	font-size: 18px;
+	font-family: Poppins;
+	font-weight: 600;
+	color: #fff;
+	padding: 12px 40px !important;
+	border-radius: 100px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+}
+
+.rounded-btn:hover {
+	color: #fff !important;
+}
+
+
+.rounded-btn::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #0734a5;
+	top: 0;
+	left: -100%;
+	z-index: -1;
+	transform-origin: left;
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+}
+
+.rounded-btn:hover:after {
+	left: 0%;
+
+}
+
+
+/*** Contact aria css ends ***/
+
+.footer-top {
+	background-color: #2e1278;
+	padding: 100px 0;
+	background-image: url(../img/bg-img.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+footer h5 {
+	font-weight: 700;
+	font-size: 30px;
+}
+
+footer p {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+footer .list-inline-item {
+    font-size: 30px;
+}
+
+footer .btn {
+	background-color: #FF3E81 !important;
+	font-size: 22px;
+	font-family: Poppins;
+	font-weight: 600;
+	color: #fff;
+	padding: 6px 30px !important;
+}
+
+
+
+
+@keyframes updown {
+    0% {
+        margin-top: 0;
+
+    }
+    50% {
+        margin-top: -40px;
+	}
+	
+	75% {
+        margin-top: -20px;
+	}
+	
+    100% {
+        margin-top: 0px;
+    }
+}
+
+/*-------------------------------------
+     RESPONSIVE CSS FILE HERE
+-----------------------------------------
+*/
+
+/*MIN WIDTH MEDIA START*/
+@media screen and (min-width:992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .8rem;
+        padding-left: .8rem;
+    }
+}
+/*MIN WIDTH MEDIA ENDS*/
+
+
+/*MAX WIDTH MEDIA START*/
+@media screen and (max-width:1205px){
+	.hero-right h1 {
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width:991px){
+    .navbar-nav {
+        border-top: 1.5px solid aliceblue;
+        margin-top: 12px;
+	}
+
+	.column-reverse {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+}
+
+@media screen and (max-width:775px){
+
+}
+
+@media screen and (min-width:415px) and (max-width:775px){
+	.card-img-top {
+		max-height: 410px;
+		min-height: 410px;
+	}
+}
+
+
+
+@media screen and (max-width:575px){
+	.footer-top {
+		padding-right: 20px !important;
+		padding-left: 20px !important;
+	}
+
+	.windows-body {
+		padding-left: 5px;
+		padding-left: 5px;
+	}
+
+	.wondows-click-box .btn {
+		padding-left: 5px;
+		padding-right: 5px;
+		font-size: 15px;
+		margin-right: 0px;
+	}
+}
+
+
+/*MAX WIDTH MEDIA ENDS*/
+
