@@ -12,13 +12,12 @@ body {
 	overflow-x: hidden !important;
 	background: #fbfbfb !important;
 	height: 100%;
-	width: 100%;
+	max-width: 100%;
 }
 
 html {
 	scroll-behavior: smooth;
-	height: 100%;
-	width: 100%;
+	max-width: 100%;
 }
 
 ul {
