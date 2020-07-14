@@ -11,11 +11,14 @@ body {
 	position: relative;
 	overflow-x: hidden !important;
 	background: #fbfbfb !important;
+	height: 100%;
+	width: 100%;
 }
 
 html {
-    scroll-behavior: smooth;
-    overflow-x:hidden;
+	scroll-behavior: smooth;
+	height: 100%;
+	width: 100%;
 }
 
 ul {
